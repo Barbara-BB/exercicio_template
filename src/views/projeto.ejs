@@ -1,0 +1,20 @@
+<%# A linha abaixo carrega no template o conteúdo total do arquivo header.ejs%>
+<%-include('base_header') -%>
+
+    <ul id="projetos_list">
+    <% for(var i=0; i< lista_projetos.length; ++i) { %>        
+        <li id="projetos_itens"> 
+            <span class="descritor">Nome:</span> <span class="lista_projetos"><%=lista_projetos[i].nome %></span> <br/>
+            <span class="descritor">Tipo de Projeto:</span> <span class="lista_projetos"><%=lista_projetos[i].tipo %></span></br>
+            <% if(lista_projetos[i].tipo =="software"){ %>
+            <span class="descritor">Tecnologia:</span> <span class="lista_projetos"><%=lista_projetos[i].tecnologia %></span><br/>
+            <% } %>
+            <span class="descritor">Início:</span> <span class="lista_projetos"><%=lista_projetos[i].inicio %></span> <br/>
+            <span class="descritor">Término:</span> <span class="lista_projetos"><%=lista_projetos[i].fim %></span></br>
+            <span class="descritor">Link:</span> <span class="lista_projetos"><%=lista_projetos[i].link %></span> <br/>            
+        </li> 
+    <% } %>
+    </ul>
+
+<%# A linha abaixo carrega no template o conteúdo total do arquivo footer.ejs %>
+<%- include('base_footer') -%>
