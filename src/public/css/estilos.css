@@ -34,9 +34,9 @@ nav{
 }
 
 main{
-    background: url("../imagens/bg.jpg")  center center;
+    background: url("../imagens/bg.jpg") repeat center center;
     background-size: cover;
-    height: 92vh;
+    height: 100vh;
 }
 .area{
     background-image: url("../imagens/Face.jpg");
@@ -122,13 +122,20 @@ p {
         margin: 30vh 78vh 0px ;
 
         }
+@media (max-height:999px){
+        main{
+            background: url("../imagens/bg.jpg") no-repeat center center;
+            background-size: cover;
+            height: 999PX;
+        }
+        }
 @media (max-width: 999px){
 
     
     body{
         overflow-x: hidden;
     }
-    
+
     .nav-list{
         position: absolute;
         top: 8vh;
@@ -284,4 +291,33 @@ p {
 }
 
 
-
+@media (max-width:999px) {
+    #projetos_itens{
+        display: inline-block;
+        
+        opacity: 0.9;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        margin-top: 5vh;
+        width: 35vh;
+        height: 25vh;
+        background-color: #443a59;
+        border-radius: 10%;
+        padding-top: 5vh;
+        border-color: #fff;
+        border-style: solid;
+        text-align: center;
+    }
+        .descritor{
+            font-weight: bold;
+            color: #FFCBDB;
+            font-size: 18px;
+        
+        }
+        
+        .lista_projetos{
+            color: #fff;
+            font-size: 16px;
+        
+        }
+    }
