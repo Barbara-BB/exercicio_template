@@ -1,2 +1,2 @@
 # exercicio_template
-exercicio sobre template ejs e diretório node
+Criação de portfolio:exercicio sobre template ejs e diretório node
