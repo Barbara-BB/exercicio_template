@@ -282,12 +282,23 @@ p {
     color: #FFCBDB;
     font-size: 18px;
 
+
 }
 
 .lista_projetos{
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
+    padding-bottom:2vh;
 
+}
+
+.btn{ 
+    background: #FFCBDB; 
+    border-radius: 6px; 
+    padding: 2px; cursor: pointer; 
+    color: #443a59; border: none; 
+    font-size: 16px;
+    margin-top: 1vh;
 }
 
 
@@ -296,14 +307,14 @@ p {
         display: inline-block;
         
         opacity: 0.9;
-        margin-left: 5vh;
-        margin-right: 5vh;
-        margin-top: 5vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        margin-top: 2vh;
         width: 35vh;
-        height: 25vh;
+        height: 20vh;
         background-color: #443a59;
         border-radius: 10%;
-        padding-top: 5vh;
+        padding-top: 2vh;
         border-color: #fff;
         border-style: solid;
         text-align: center;
@@ -314,10 +325,15 @@ p {
             font-size: 18px;
         
         }
+
+    
         
         .lista_projetos{
             color: #fff;
             font-size: 16px;
         
         }
+
+
     }
+
